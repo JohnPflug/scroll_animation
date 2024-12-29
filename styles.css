@@ -1,0 +1,44 @@
+h1 {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 5vw;
+    text-align: center;
+}
+
+.autoRotate {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    animation: autoRotateAnimation;
+    animation-timeline: view();
+    margin: auto;
+}
+
+.middleGround {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.backGround {
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    height: auto;
+    z-index: -2;
+}
+
+@keyframes autoRotateAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
